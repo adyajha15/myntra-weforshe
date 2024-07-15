@@ -17,7 +17,7 @@ Our team (Adya, Aditi, and Chetanarupa) has extended this clone for the Myntra W
 
 - Adya Jha - [@adyajha15](https://github.com/adyajha15)
 - Aditi Rao - [@unfortunatelygeek](https://github.com/unfortunatelygeek) 
-- Chetana Jirgale
+- Chetana Jirgale - [@cheetos09-ops](https://github.com/cheetos09-ops) 
 
 ## 🛠️ Tech Stack
 
