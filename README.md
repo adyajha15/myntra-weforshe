@@ -9,7 +9,9 @@ Our team (Adya, Aditi, and Chetanarupa) has extended this clone for the Myntra W
 1. 🌿 **Sustainability Section**: Addressing fast fashion concerns
 2. 🏆 **Weekly Challenges and Voting**: Enhancing user engagement
 3. 📸 **Fashion Creator Studio Feed**: Showcasing user-generated content
-4. 🕶️ **AR Try-On Experience**: Virtual fitting room functionality
+4. 🕶️ **AR Try-On Experience**: Virtual fitting room functionality, with two modes!
+- Live-Try-It-On
+- Lazy 2D
 
 ## 👩‍💻 Team Members 🌟
 
@@ -58,6 +60,26 @@ We have added sections for Sustainability, AR/VR, Weekly challenges, and Social 
 
 4. 🕶️ **AR Try-On Experience**: Allows users to virtually try on clothing items using augmented reality.
 
+   ### 👗 Lazy 2D Feature
+   The Lazy 2D feature is an innovative addition to our virtual try-on experience. It utilizes Stable VITON (Virtual Try-On) technology to seamlessly fit a person's image with their chosen outfit. Here's how it works:
+
+   - 📸 Users upload a full-body photo of themselves
+   - 👚 They select an outfit from our catalog
+   - 🖼️ The AI-powered Stable VITON algorithm processes the image and outfit
+   - 🎭 The result is a realistic composite image showing the user wearing the selected clothing
+
+   This feature allows users to see how different outfits would look on them without physically trying them on, enhancing the online shopping experience and reducing the need for returns.
+
+   ### 📹 Live Try-On Feature
+   The Live Try-On feature takes virtual fitting to the next level with real-time Augmented Reality (AR) technology. This cutting-edge feature offers:
+
+   - 🎥 Real-time clothing overlay on the user's body through their device's camera
+   - 🔄 Dynamic adjustment of the virtual clothing as the user moves
+   - 👀 Instant visualization of how different outfits look from various angles
+   - 💡 Enhanced shopping experience with immediate virtual try-ons
+
+   This AR-powered feature provides an immersive and interactive way for users to explore and experiment with different fashion choices, bridging the gap between online and in-store shopping experiences.
+
 ## 💡 Challenges and Learnings
 
 Throughout the development process, we encountered various challenges such as:
@@ -77,8 +99,14 @@ These challenges provided valuable learning opportunities in tackling real-world
 
 ## 🙏 Acknowledgments
 
+This project builds upon the concepts introduced by the Stable VITON project. The stable VITON project aims to create a model that could realistically superimpose clothing items onto a person's image, allowing for a virtual try-on experience. We extend our gratitude to the researchers and developers behind Stable VITON for laying the groundwork that inspired our work.
+
 We would like to express our gratitude to the original creators of this Myntra clone. Special thanks to Md Sahil Amaan and his team for their excellent work on the original clone.
+
+### Citations
+
+- Kim, Jeongho; Gu, Gyojung; Park, Minho; Park, Sunghyun; Choo, Jaegul. "StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On." arXiv preprint [arXiv:2312.01725](https://arxiv.org/abs/2312.01725), 2023.
 
 ### Original Project Links
 
-- [GitHub Repository](https://github.com/adyajha15/myntra-weforshe/)
+- [Stable VITON](https://github.com/rlawjdghek/StableVITON)
