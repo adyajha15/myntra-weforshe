@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #ff3f6c;
+  --secondary-color: #535766;
+  --background-color: #ffffff;
+  --light-gray: #f5f5f6;
+  --dark-gray: #282c3f;
+}
+
+body {
+  font-family: 'Whitney', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--dark-gray);
+  font-size: 16px; /* Increase base font size */
+}
+
+header {
+  background-color: var(--background-color);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 24px; /* Increased padding for better touch target */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px; /* Increased font size */
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px; /* Increased padding */
+}
+
+h1, h2 {
+  color: var(--dark-gray);
+  font-size: 28px; /* Increased heading sizes */
+}
+
+button, .dropbtn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 16px 24px; /* Increased padding */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  opacity: 0.9;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 240px; /* Increased minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--secondary-color);
+  padding: 16px 20px; /* Increased padding */
+  text-decoration: none;
+  display: block;
+  font-size: 16px; /* Increased font size */
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light-gray);
+}
+
+.show {
+  display: block;
+}
+
+#home {
+  text-align: center;
+  padding: 48px 0; /* Increased padding */
+}
+
+#home-secondary {
+  text-align: center;
+  padding: 24px 0; /* Increased padding */
+}
+
+#try-on {
+  background-color: var(--light-gray);
+  padding: 48px; /* Increased padding */
+  border-radius: 4px;
+}
+
+#ar-container {
+  background-color: var(--background-color);
+  border: 1px solid #e9e9ed;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#ar-container img {
+  width: 100%;
+  height: auto;
+}
+
+#clothing-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Increased gap */
+  margin-top: 24px; /* Increased margin */
+}
+
+#catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Increased minimum width */
+  gap: 24px; /* Increased gap */
+  margin-top: 48px; /* Increased margin */
+}
+
+#how-it-works {
+  background-color: var(--light-gray);
+  padding: 48px; /* Increased padding */
+  border-radius: 4px;
+  margin-top: 48px; /* Increased margin */
+}
+
+#how-it-works ol {
+  padding-left: 24px; /* Increased padding */
+}
+
+footer {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+  text-align: center;
+  padding: 24px; /* Increased padding */
+  margin-top: 48px; /* Increased margin */
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #try-on, #how-it-works {
+      padding: 24px; /* Increased padding */
+  }
+}

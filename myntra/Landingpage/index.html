@@ -9,12 +9,13 @@
      <!-- FAVICON -->
      <link rel="shortcut icon" type="image/png" href="/Common Files/image/favicon.png">
     <!-- ALL CSS LINK -->
-    <link rel="stylesheet" href="/Common Files/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="myntra/Common Files/style.css">
+    <link rel href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- FONT-AWESOME -->
     <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <script src = "toggle.js"></script>
     <style>
         #section_1 img{
             width: unset;
@@ -53,14 +54,13 @@
         <div id="right_icon">
             <div id="reggDropdown">
                 <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
-              <div id="drop">
-                  <a href="/Profile/profile.html" class="dropList">login</a>
-                  <a href="/Profile/signup.html" class="dropList">sign up</a>
-              </div>
-
-              <i class="fa-regular fa-user"></i>
-              <span>profile</span>
-          </div>
+                <div id="drop">
+                    <a href="myntra/Profile/profile.html" class="dropList">login</a>
+                    <a href="myntra/Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
             <div>
                 <i class="fa-regular fa-heart"></i>
                 <span>wishlist</span>
@@ -70,27 +70,28 @@
                 <span>bag</span>
             </div>
         </div>
-                   <!-- TOGGLE MENU -->
-                   <div id="toggle">
-                    <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
-                    <div id="myDropdown" class="dropdown-content">
-                        <div class="top">
-                            <a href="../Homepages/menHomePage.html">men</a>
-                            <a href="../Homepages/womenHomePage.html">women</a>
-                            <a href="#">kids</a>
-                            <a href="../Homepages/homeLiving.html">home & living</a>
-                            <a href="#">beauty</a>
-                            <a href="#">studio</a>
-                            <a href="../Homepages/sustainability.html">Sustainablility!</a>
-                        </div>
-                        <div class="bottom">
-                            <i class="fa-regular fa-user fa_user" id="profile"></i>
-                            <i class="fa-regular fa-heart fa_wishlist"></i>
-                            <i class="fa-solid fa-bag-shopping fa_cart"></i>
-                        </div>               
-                    </div>
+        <!-- TOGGLE MENU -->
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="../Homepages/menHomePage.html">men</a>
+                    <a href="../Homepages/womenHomePage.html">women</a>
+                    <a href="#">kids</a>
+                    <a href="../Homepages/homeLiving.html">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                    <a href="../Homepages/sustainability.html">Sustainablility!</a>
                 </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>               
+            </div>
+        </div>
     </header>
+    
 
     
     <div class="slider">
@@ -279,7 +280,7 @@
                 transition: background-color 0.3s ease;
             }
             .btn:hover {
-                background-color: ##ff3f6c;
+                background-color: #ff3f6c;
             }
             @media (max-width: 768px) {
                 .container {

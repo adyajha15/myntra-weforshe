@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualFit AR - Try On Clothes Virtually</title>
+    <link rel="stylesheet" href="ar-styles.css">
+    <link rel="stylesheet" href="myntra/Common Files/style.css">
+    <link rel="stylesheet" href="../Landingpage/navbar.css">
+    <link rel="stylesheet" href="../Landingpage/footer.css">
+    <style>
+        /* Your existing CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Landingpage/index.html">Home</a></li>
+                <li><a href="../Homepages/menHomePage.html">Men</a></li>
+                <li><a href="../Homepages/womenHomePage.html">Women</a></li>
+                <li><a href="../Homepages/homeLiving.html">Home Living</a></li>
+                <li><a href="#try-on">Try On</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="../Profile/profile.html">Profile</a></li>
+                <li><a href="../wishlist/wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to VirtualFit AR</h1>
+            <p>Experience clothes shopping like never before with our AR try-on technology!</p>
+            <div class="dropdown">
+                <button class="dropbtn">Get Started</button>
+                <div class="dropdown-content">
+                    <a href="live-try-on.html">Try it on Live! Turn on your Camera!</a>
+                    <a href="#how-it-works">Too Lazy? Give us a Photo of you and we'll do the rest!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog">
+            <h2>Our Catalog</h2>
+            <!-- Grid of clothing items -->
+        </section>
+
+        <section id="how-it-works">
+            <h2>How Lazy 2D Will Work:</h2>
+            <ol>
+                <li>Choose an item from our catalog.</li>
+                <li>Grant camera access.</li>
+                <li>Upload a clear photo of yourself.</li>
+                <li>A <strong>Stable Viton model</strong> will analyze your photo.</li>
+                <li>See the selected item overlaid realistically on your image.</li>
+                <li>Adjust sizes, colors, and styles directly!</li>
+            </ol>
+            <p>The <strong>Stable Viton model</strong> is an advanced neural network designed to simulate how selected clothing items will appear on your body. Developed by pioneers in artificial intelligence and fashion technology, it ensures a highly realistic virtual fitting experience.</p>
+        </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2024 VirtualFit AR. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="../Homepages/sustainability.html">Sustainability</a></li>
+                <li><a href="../Homepages/voting.html">Voting</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="ar-scripts.js"></script>
+    <script src="../Landingpage/deals.js"></script>
+    <script>
+        // Smooth scrolling functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
