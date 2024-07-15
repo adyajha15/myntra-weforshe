@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra - Your Closet's Next Chapter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #282c3f;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #logo img {
+            height: 40px;
+            cursor: pointer;
+        }
+        #nav_bar {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        #nav_bar li {
+            position: relative;
+        }
+        #nav_bar a {
+            text-decoration: none;
+            color: #282c3f;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        #nav_bar li:hover a {
+            color: #ff3f6c;
+        }
+        #nav_bar li#studio span {
+            color: #ff3f6c;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        #search {
+            display: flex;
+            align-items: center;
+        }
+        #search_bar {
+            border: 1px solid #ddd;
+            padding: 8px;
+            border-radius: 4px 0 0 4px;
+            width: 300px;
+        }
+        #search_icon {
+            background-color: #ff3f6c;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        #right_icon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #right_icon div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        #right_icon i {
+            margin-right: 5px;
+        }
+        #reggDropdown {
+            position: relative;
+        }
+        #drop {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        #reggDropdown:hover #drop {
+            display: block;
+        }
+        .dropList {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #282c3f;
+        }
+        .dropList:hover {
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 20px;
+        }
+        .image-section, .content-section, .form-section {
+            width: 100%;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        h1, h2 {
+            color: #ff3f6c;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #ff3f6c;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff3f6c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e6375f;
+        }
+        .side-by-side {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .side-by-side img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+        }
+        .side-by-side .text {
+            width: 50%;
+        }
+        .dont-ditch {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff3f6c;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../Common Files/image/myntra-removebg-preview.png" alt="brandLogo" id="landingPage">
+        </div>
+        <ul id="nav_bar">
+            <li><a href="../Homepages/menHomePage.html">men</a></li>
+            <li><a href="../Homepages/womenHomePage.html">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="../Homepages/homeLiving.html">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+            <li><a href="../Homepages/sustainability.html">Sustainablility!</a></li> <!-- New Section Link -->
+        </ul>  
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="reggDropdown">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+                <div id="drop">
+                    <a href="../Profile/profile.html" class="dropList">login</a>
+                    <a href="../Profile/signup.html" class="dropList">sign up</a>
+                </div>
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="../Common Files/image/My first design.png" alt="Sustainable Fashion">
+        </div>
+        <div class="content-section">
+            <h1>Your Closet's Next Chapter: Recycle with Myntra</h1>
+            <p>Fast fashion is taking a toll on our planet. The fashion industry is responsible for 10% of annual global carbon emissions, more than all international flights and maritime shipping combined. By recycling your clothes, you can make a significant impact.</p>
+            
+            <h2>The Harmful Effects of Fast Fashion</h2>
+            <p>Love the look? Love the planet even more! Fast fashion trends may come and go, but their impact on our environment lingers. Production churns out greenhouse gasses, while toxic dyes pollute waterways. Don't let your wardrobe cost the Earth! Fast fashion contributes to water pollution, increases landfill waste, and often involves unethical labor practices. By choosing to recycle, you're taking a stand against these harmful practices.</p>
+            
+            <h2>Recycling: A Simple Solution</h2>
+            <div class="side-by-side">
+                <img src="../Common Files/image/My first design 1.png" alt="Recycling Image">
+                <div class="text">
+                    <div class="dont-ditch">Don't Ditch, Restitch! Recycle Your Threads for Endless Trends!</div>
+                    <p>With Myntra's "Your Closet's Next Chapter" campaign, recycling has never been easier. We pick up clothes right from your doorstep, making it super convenient for you to contribute to a sustainable future.</p>
+                </div>
+            </div>
+            
+            <h2>How It Works</h2>
+            <p>Simply fill out the form below, and we'll schedule a pickup for your clothes. Your recycled garments will be given a new life, reducing waste and helping the environment.</p>
+            
+            <h2>Join the Movement</h2>
+            <p>By participating in our recycling program, you're not just decluttering your closet – you're making a positive impact on the planet. Let's write the next chapter of sustainable fashion together.</p>
+        </div>
+        <div class="form-section" id="recycle-section">
+            <h2>Recycle Your Clothes</h2>
+            <form id="recycleForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="condition">Condition of Clothes:</label>
+                    <select id="condition" name="condition" required>
+                        <option value="">Select condition</option>
+                        <option value="fair">Fair</option>
+                        <option value="good">Good</option>
+                        <option value="superb">Superb</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Add Image of Clothes:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+                <button type="submit">Add Image & Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('recycleForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for contributing to sustainable fashion! We will contact you soon to arrange the pickup.');
+        });
+    </script>
+</body>
+</html>

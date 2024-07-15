@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> #MuseMe by Myntra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .logo {
+            color: #ff3f6c;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            margin-bottom: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .image-container {
+            flex: 1;
+            max-width: 300px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .vote-button {
+            background-color: #4e494a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .vote-button:hover {
+            background-color: #ff527b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">#MuseMe by Myntra</div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="image-container">
+                <img src="https://i.pinimg.com/474x/5e/20/a7/5e20a707b41021abc562eb61d3b77ff0.jpg" alt="Fashion Item 1">
+            </div>
+            <div class="content">
+                <button class="vote-button">Vote for This Look</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <img src="https://i.pinimg.com/474x/4d/00/c8/4d00c8da50cceb75683b357e85dddf6d.jpg" alt="Fashion Item 2">
+            </div>
+            <div class="content">
+                <button class="vote-button">Vote for This Look</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <img src="https://i.pinimg.com/564x/2e/85/9e/2e859eb149f732b9f74dd360a89f82b9.jpg" alt="Fashion Item 3">
+            </div>
+            <div class="content">
+                <button class="vote-button">Vote for This Look</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-container">
+                <img src="https://i.pinimg.com/474x/18/cc/90/18cc90ae1d88eb1f2af1c7045c25594f.jpg" alt="Fashion Item 4">
+            </div>
+            <div class="content">
+                <button class="vote-button">Vote for This Look</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
