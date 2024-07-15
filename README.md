@@ -11,11 +11,11 @@ Our team (Adya, Aditi, and Chetanarupa) has extended this clone for the Myntra W
 3. 📸 **Fashion Creator Studio Feed**: Showcasing user-generated content
 4. 🕶️ **AR Try-On Experience**: Virtual fitting room functionality
 
-## 👩‍💻 Hackathon Team Members
+## 👩‍💻 Team Members 🌟
 
-- Adya Jha
-- Aditi Rao
-- Chetanarupa Jirgale
+- Adya Jha - [@adyajha15](https://github.com/adyajha15)
+- Aditi Rao - [@unfortunatelygeek](https://github.com/unfortunatelygeek) 
+- Chetana Jirgale
 
 ## 🛠️ Tech Stack
 
